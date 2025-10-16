@@ -1,12 +1,57 @@
-# React + Vite
+# Hospital Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack Hospital Management System with a React (Vite) frontend and Node/Express + Sequelize backend (MySQL), plus Google Calendar integration.
 
-Currently, two official plugins are available:
+- Patient and doctor management
+- Appointments and financial tracking dashboard
+- Google Calendar event creation for appointments
+- WhatsApp chat frontend (planned) for booking appointments via a conversational bot flow
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Screenshots / Visuals
 
-## Expanding the ESLint configuration
+Hero cover image used on the Home page:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Home Cover](app/images/cover.webp)
+
+Generic app image (public, used in assets):
+
+![Public Image](app/public/image.png)
+
+## Prerequisites
+- Node.js 18+
+- MySQL 8+ (or compatible)
+
+## Quick Start
+
+### Backend
+1. Create `backend/.env` 
+
+2. Install and run:
+```
+cd backend
+npm install
+npm run start
+```
+
+### Frontend
+1. Create `app/.env` with:
+```
+VITE_API_BASE_URL=http://localhost:3001
+```
+2. Install and run:
+```
+cd app
+npm install
+npm run dev
+```
+
+### Development URLs
+- Frontend: http://localhost:5173
+- Backend API: http://localhost:3001
+
+## WhatsApp Conversational Booking (Planned)
+This project will include a WhatsApp chat frontend where patients can book appointments through a conversational bot flow. The intended flow is:
+- User opens WhatsApp chat and initiates booking
+- Conversational prompts collect name, age, symptoms, preferred date & time, and doctor
+- The bot calls backend APIs to create the appointment and (optionally) create a Google Calendar event
+- Confirmation and reminders are sent back via WhatsApp
