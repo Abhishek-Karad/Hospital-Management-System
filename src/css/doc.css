@@ -1,0 +1,166 @@
+/* General page */
+.doctor-page {
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Container Layout */
+.doctor-container {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Add/Edit Form */
+.add-edit-doctor {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.add-edit-doctor h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.doctor-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.doctor-form input,
+.doctor-form select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border 0.2s;
+}
+
+.doctor-form input:focus,
+.doctor-form select:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+.doctor-form button {
+  background: #3b82f6;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.doctor-form button:hover {
+  background: #2563eb;
+}
+
+.success-msg {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.error-msg {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* Doctor Cards */
+.doctor-list-cards {
+  flex: 2;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.doctor-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  transition: transform 0.2s;
+}
+
+.doctor-card:hover {
+  transform: translateY(-3px);
+}
+
+.doctor-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #eee;
+}
+
+.doctor-info {
+  flex: 1;
+}
+
+.doctor-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #111;
+}
+
+.doctor-info p {
+  margin: 3px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Actions */
+.doctor-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.doctor-actions button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.doctor-actions button:first-child {
+  background: #f59e0b;
+  color: #fff;
+}
+
+.doctor-actions button:first-child:hover {
+  background: #d97706;
+}
+
+.doctor-actions button:last-child {
+  background: #ef4444;
+  color: #fff;
+}
+
+.doctor-actions button:last-child:hover {
+  background: #dc2626;
+}

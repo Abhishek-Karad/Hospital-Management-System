@@ -1,0 +1,85 @@
+/* ========== PAGE WRAPPER ========== */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ========== COVER IMAGE SECTION ========== */
+.home-cover {
+  flex: 1;
+  background: url("/images/cover.webp") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Overlay for readability */
+.home-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Content in center */
+.home-content {
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  max-width: 800px;
+  animation: fadeInUp 1.5s ease;
+}
+
+/* Headings */
+.home-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.home-title span {
+  color: #facc15;
+}
+
+.home-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #e5e5e5;
+}
+
+/* ========== FOOTER OUTSIDE IMAGE ========== */
+.home-footer {
+  background-color: #111827; /* dark gray */
+  color: #d1d5db;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
+.home-footer strong {
+  color: #facc15;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 2.2rem;
+  }
+  .home-subtitle {
+    font-size: 1rem;
+  }
+}
