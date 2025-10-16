@@ -11,11 +11,15 @@ A full-stack Hospital Management System with a React (Vite) frontend and Node/Ex
 
 Hero cover image used on the Home page:
 
-![Home Cover](app/images/cover.webp)
+![Home Cover](images/1.jpeg)
 
-Generic app image (public, used in assets):
 
-![Public Image](app/public/image.png)
+
+![Public Image](images/2.jpeg)
+
+![Public Image](images/3.jpeg)
+
+![Public Image](images/4.jpeg)
 
 ## Prerequisites
 - Node.js 18+
